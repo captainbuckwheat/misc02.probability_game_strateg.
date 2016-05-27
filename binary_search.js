@@ -36,7 +36,7 @@ In example of question #1 the problem is in a form of:
 In example of question #2 the problem is in a form of:
    There exists such x that x is the correct answer to the problem;
 In example of question #3 the problem is in a form of:
- binary_search does not find the LARGEST x such that f(x) is true. Find such function. 
+ binary_search does not find the LARGEST x such that f(x) is true. Use such function. 
 */
 
 
