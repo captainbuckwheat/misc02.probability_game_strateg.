@@ -32,7 +32,7 @@ var binary_search_test  = function() {
 
 /*
 In example of question #1 the problem is in a form of:
-  There exists such x that everything below it including x is true, everything above it ss false, the function finds x; 
+  There exists such x that everything below it including x is true, everything above it is false, the function finds x; 
 In example of question #2 the problem is in a form of:
    There exists such x that x is the correct answer to the problem;
 In example of question #3 the problem is in a form of:
@@ -77,10 +77,11 @@ var f = function(x) {return x*x <= 1000000}
 binary_search(1, 10000000, f)/100
 
 //question #3
-// Note. binary_search does not find the LARGEST x such that f(x) is true.
+/*
+Note. binary_search does not find the LARGEST x such that f(x) is true.
 It just finds ANY x in the range [low, high] such that f(x) is true and f(x+1) is false.
 For example, consider the function 
-
+*/
 var f = function(x) { return (x > 10 && x < 80) || x == 99 }
 
 // We can see both f(79) and f(99) are true. But binary_search(1,100,f) will return 79. 
